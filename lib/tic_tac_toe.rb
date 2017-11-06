@@ -126,7 +126,7 @@ def winner(board)
 end
 
 def play(board)
-  while over?(board) == false
+  while over?(board) == false && draw?(board) == false
     turn(board)
   end
   if winner(board)
